@@ -1,4 +1,4 @@
-#игнорировать все css-файлы
+#ignore all css-files
 *.css 
-#игнорировать map-файлы
+#ignore all map-files
 *.map
