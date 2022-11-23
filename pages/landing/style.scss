@@ -1,3 +1,138 @@
-body {
-  background-color: aqua;
+// import reset
+@import '../../reset';
+
+// add variables
+$font-text: 400 18px 'Archivo', sans-serif;
+$font-heading: 700 56px 'Archivo', sans-serif;
+$font-bold: 700 18px 'Archivo', sans-serif;
+
+$text-color:#595959;
+$heading-color:black;
+$bg-color: #F9F6F1;
+$btn-bg-color:black;
+
+// add %%
+
+%text {
+  font: $font-text;
+  line-height: 150%;
+  color: $text-color
+}
+
+%heading {
+  font: $font-heading;
+  line-height: 61px;
+  color: $heading-color;
+}
+
+// add mixins
+
+@mixin bg($url, $posG, $posV) {
+  background: {
+    image: url($url);
+    position: $posG $posV;
+    repeat: no-repeat;
+  }
+  
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $bg-color;
+}
+
+.about {
+  // width: (1440px - 661px) / 1440px * 100%;
+  width: 520px;
+  padding-left: 20px;
+  margin: 40px auto 196px;
+  
+
+  &__logo {
+    margin-bottom: 128px;
+  }
+ 
+  &__header {
+    @extend %heading;
+    margin-bottom: 8px;
+    width: 480px;
+  }
+
+  &__text {
+    @extend %text;
+    width: 480px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 16px 0 24px 0;
+
+  }
+
+  &__list-item {
+    @extend %text;
+    @include bg('../../assets/icons/mark.png', left, top);
+    padding-left: 36px;
+ 
+  }
+
+  &__btn {
+    width: 216px;
+    margin-bottom: 36px;
+  }
+
+  &__logos {
+    width: 420px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  &__logos-item {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(1) {
+      width: 82px;
+    }
+    &:nth-child(2) {
+      width: 130px;
+    }
+    &:nth-child(3) {
+      width: 160px;
+    }
+   }
+}
+.logo {
+  width: 118px;
+  height: 27px;
+  @include bg('../../assets/icons/logo.png', left,center);
+  text-align: center;
+  padding-left: 30px;
+  font: $font-bold;
+  line-height: 150%;
+
+}
+.button {
+  background-color:$btn-bg-color;
+  color: white;
+  font: $font-bold;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 63px;
+
+}
+.bg-image {
+  width: 660px;
+  height: 900px;
 }
