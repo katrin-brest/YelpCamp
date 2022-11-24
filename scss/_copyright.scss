@@ -1,0 +1,34 @@
+// copyright block
+
+.copyright {
+  background-color: $heading-color;
+  height: 47px;
+  padding: 10px 0;
+  
+  &__inner {
+    width: 586px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    color: white;
+    font: $font-bold;
+    line-height: 150%;
+  }
+  
+  &__link {
+    color: #75D6FF;
+    border-bottom: 1px solid #75D6FF;
+  }
+}
+
+.close-btn {
+  @include bg('../../assets/icons/Close.png', center, center);
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}

@@ -1,0 +1,33 @@
+// header block Not Logged in
+.header {
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+
+  &__inner-left {
+    display: flex;
+    gap:32px;
+  }
+
+  // &__logo {}
+
+  &__home {
+    @extend %text;
+  }
+
+  &__inner-right {
+    display: flex;
+    gap:23px;
+    align-items: center;
+  }
+
+  &__login {
+  @extend %text;
+  }
+
+  &__btn {
+    width: 204px; 
+  }
+}
