@@ -1,10 +1,12 @@
 // header block Not Logged in
 .header {
+  max-width: 1140px;
+  margin: 40px auto;
   height: 63px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0;
+  // margin: 40px 0;
 
   &__inner-left {
     display: flex;

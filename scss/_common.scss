@@ -21,6 +21,10 @@ $btn-bg-color:black;
   line-height: (61px / 56px) * 100%;
   color: $heading-color;
 }
+%border {
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+}
 
 // / add mixins
 @mixin bg($url, $posG, $posV) {
