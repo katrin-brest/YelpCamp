@@ -1,0 +1,39 @@
+// add variables
+$font-text: 400 18px 'Archivo', sans-serif;
+$font-heading: 700 56px 'Archivo', sans-serif;
+$font-bold: 700 18px 'Archivo', sans-serif;
+
+$text-color:#595959;
+$heading-color:black;
+$bg-color: #F9F6F1;
+$btn-bg-color:black;
+
+// add %%
+
+%text {
+  font: $font-text;
+  line-height: 150%;
+  color: $text-color
+}
+
+%heading {
+  font: $font-heading;
+  line-height: (61px / 56px) * 100%;
+  color: $heading-color;
+}
+
+// / add mixins
+@mixin bg($url, $posG, $posV) {
+  background: {
+    image: url($url);
+    position: $posG $posV;
+    repeat: no-repeat;
+  }
+}
+@mixin headings($font-size) {
+  font: $font-heading;
+  font-size: $font-size;
+  line-height: (61px / 56px) * 100%;
+  color: $heading-color;
+  }
+

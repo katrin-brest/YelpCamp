@@ -1,0 +1,10 @@
+// logo block
+.logo {
+  width: 118px;
+  height: 27px;
+  @include bg('../../assets/icons/logo.png', left,center);
+  text-align: center;
+  padding-left: 30px;
+  font: $font-bold;
+  line-height: 150%;
+}
