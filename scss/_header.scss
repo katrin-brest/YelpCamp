@@ -32,4 +32,14 @@
   &__btn {
     width: 204px; 
   }
+  &__user {
+    font: $font-bold;
+    line-height: 150%;
+    color: $text-color;
+  }
+
+  &__logout {
+    @extend .header__user;
+    font-weight: 400;
+  }
 }
