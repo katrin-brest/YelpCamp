@@ -7,6 +7,7 @@ $text-color:#595959;
 $heading-color:black;
 $bg-color: #F9F6F1;
 $btn-bg-color:black;
+$bg-input:#F7F7F7;
 
 // add %%
 
@@ -24,6 +25,12 @@ $btn-bg-color:black;
 %border {
   border: 1px solid #DADADA;
   border-radius: 5px;
+}
+
+%link-blue {
+  color: #009FE0;
+  border-bottom: 1px solid #75D6FF;
+  font-weight: 700;
 }
 
 // / add mixins

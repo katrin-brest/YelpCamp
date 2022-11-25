@@ -1,0 +1,122 @@
+@import '../../scss/reset';
+@import '../../scss/common';
+@import '../../scss/logo';
+@import '../../scss/button';
+
+.sign {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: (834px / 1440px) * 100% 1fr;
+  height: 900px;
+
+  &__inner {
+    background-color: white;
+    padding: 40px 150px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // &__logo {}
+
+  // &__form {}
+}
+
+.header {
+  margin-bottom: 150px;
+
+  &__link {
+    font: $font-text;
+    line-height: (20px / 18px) * 100%;
+    color: $text-color;
+  }
+}
+
+.form {
+  width: 543px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__heading {
+    @include headings(36px);
+    margin-bottom: 12px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  &__label {
+    @extend .header__link;
+  }
+
+  &__input {
+    width: 100%;
+    height: 63px;
+    border-radius: 5px;
+    background-color: $bg-input;
+    padding: 18px 24px;
+    @extend %text;
+    color: #ACACAC;
+    opacity: 0.5;
+  }
+
+  &__btn {
+    width: 534px;
+  }
+
+  &__text {
+   @extend %text; 
+   margin-top: -8px;
+
+    a {
+      @extend %link-blue;
+    }
+  }
+}
+
+.quote {
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__inner {
+    width: 306px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text {
+    @include headings (24px);
+    line-height: 162%;
+  }
+
+  &__person {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 56px;
+    @include bg('../../assets/icons/User.png',left, center);
+  }
+
+  &__name {
+    @include headings(16px);
+  }
+
+  &__status {
+    @extend %text;
+    line-height: (17px / 16px) *100%;
+    font-size: 16px;
+   }
+}
