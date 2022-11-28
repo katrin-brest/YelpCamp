@@ -4,26 +4,33 @@
 // import common styles
 @import '../../scss/common';
 
-
-
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: (1440px - 661px) / 1440px *100%  661px/1440px*100%;
+  grid-template-rows: 107px 1fr;
+  grid-template-areas: 
+   "header image"
+   "main   image" ;
   background-color: $bg-color;
+}
+.header {
+  grid-area: header;
+  height: 107px;
+  padding: 40px 0 40px 150px;
+
+  // &__logo {
+    
+  // }
 }
 
 .about {
+  grid-area: main;
   width: 520px;
   padding-left: 20px;
-  margin: 40px auto 196px;
- 
-  &__logo {
-    margin-bottom: 128px;
-  }
- 
+  margin: 88px auto 196px;
+    
   &__header {
     @extend %heading;
     margin-bottom: 8px;
@@ -82,27 +89,10 @@
 
 @import '../../scss/_logo';
 
-// .logo {
-//   width: 118px;
-//   height: 27px;
-//   @include bg('../../assets/icons/logo.png', left,center);
-//   text-align: center;
-//   padding-left: 30px;
-//   font: $font-bold;
-//   line-height: 150%;
-// }
-
-// .button {
-//   background-color:$btn-bg-color;
-//   color: white;
-//   font: $font-bold;
-//   border-radius: 5px;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   height: 63px;
-// }
 @import '../../scss/_button';
 
 .bg-image {
+  grid-area: image;
   width: 660px;
   height: 900px;
 }
