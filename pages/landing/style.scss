@@ -8,39 +8,79 @@
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: (1440px - 661px) / 1440px *100%  661px/1440px*100%;
+  grid-template-columns: 1fr 660px;
   grid-template-rows: 107px 1fr;
   grid-template-areas: 
    "header image"
    "main   image" ;
   background-color: $bg-color;
+
+    @media screen and (max-width: 1170px) {
+      max-width: 1170px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 107px 375px 1fr;
+      grid-template-areas: 
+       "header"
+       "image"
+       "main" ;
+      }
+      @media screen and (max-width: 767px) {
+        max-width: 767px;
+        // grid-template-rows: 107px 375px 572px;
+      }
 }
+
 .header {
   grid-area: header;
+  width: 520px;
   height: 107px;
-  padding: 40px 0 40px 150px;
+  padding-left: 20px;
+  margin: 0 auto;
 
-  // &__logo {
-    
-  // }
+  @media screen and (max-width:1170px) {
+      width: 100%;
+      padding-left: 40px;
+   }
+  @media screen and (max-width:767px) {
+      width: 100%;
+      padding-left: 20px;
+   }
+
+  &__logo {
+    margin: 40px 0;
+  }
 }
 
 .about {
   grid-area: main;
-  width: 520px;
+  max-width: 520px;
   padding-left: 20px;
   margin: 88px auto 196px;
+
+  @media  screen and (max-width:1170px) {
+    max-width: 100%;
+    margin: 40px;
+    padding-left: 0;
+  }
+  @media  screen and (max-width:767px) {
+    
+    margin: 40px 20px;
+    padding-left: 0;
+  }
+
     
   &__header {
     @extend %heading;
     margin-bottom: 8px;
-    width: 480px;
+    
+    @media  screen and (max-width:767px) {
+      font-size:36px;
+    }
   }
 
   &__text {
     @extend %text;
-    width: 480px;
-  }
+   }
 
   &__list {
     display: flex;
@@ -61,13 +101,19 @@
   }
 
   &__logos {
-    width: 420px;
+    max-width: 420px;
     height: 42px;
     display: flex;
     flex-direction: row;
     gap: 24px;
     align-items: center;
     margin-top: 8px;
+    @media screen and (max-width:767px) {
+      gap: 0;
+    }
+    @media screen and (max-width:410px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__logos-item {
@@ -91,8 +137,20 @@
 
 @import '../../scss/_button';
 
-.bg-image {
-  grid-area: image;
-  width: 660px;
-  height: 900px;
-}
+.image {
+ grid-area: image;
+ width: 100%;
+
+ @include bg('../../assets/images/Hero-desctop.jpg', center, center);
+
+ @media screen and (max-width:1170px) {
+  @include bg('../../assets/images/Hero-tablet.jpg',center, center);
+  background-size: cover;
+ }
+
+
+   
+
+ }
+
+
