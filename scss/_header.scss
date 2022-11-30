@@ -7,6 +7,17 @@
   justify-content: space-between;
   align-items: center;
   // margin: 40px 0;
+  
+  @media screen  and (max-width:1170px) {
+    width: calc(100% - 80px);
+  }
+  @media screen  and (max-width:1170px) {
+    height: 40px;
+  }
+
+  @media screen  and (max-width:600px) {
+    width: calc(100% - 40px);
+  }
 
   &__inner-left {
     display: flex;
@@ -17,12 +28,20 @@
 
   &__home {
     @extend %text;
+    @media screen  and (max-width:900px) {
+      display: none;
+    }
   }
 
   &__inner-right {
     display: flex;
     gap:23px;
     align-items: center;
+
+    
+    @media screen  and (max-width:900px) {
+      display: none;
+    }
   }
 
   &__login {
@@ -41,5 +60,27 @@
   &__logout {
     @extend .header__user;
     font-weight: 400;
+  }
+}
+.burger {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: $bg-color;
+  display: none;
+  @media screen and (max-width:900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+  }
+
+  &__line {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: black;
   }
 }
