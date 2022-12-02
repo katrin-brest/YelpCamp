@@ -1,10 +1,14 @@
 // form styles
 
 .form {
-  width: 534px;
+  min-width: 534px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @media screen and (max-width:600px) {
+    min-width:300px; 
+  }
 
   &__heading {
     @include headings(36px);
@@ -12,6 +16,7 @@
   }
 
   &__item {
+    max-width:534px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -42,7 +47,7 @@
   }
 
   &__btn {
-    width: 534px;
+    max-width: 534px;
   }
 
   &__text {

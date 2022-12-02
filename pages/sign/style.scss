@@ -9,11 +9,23 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: (834px / 1440px) * 100% 1fr;
-  height: 900px;
+  
+
+  @media screen and (max-width:1170px) {
+    grid-template-columns: 1fr;
+  }
 
   &__inner {
     background-color: white;
-    padding: 40px 150px;
+    max-width: 534px;
+    margin: 0 auto;
+    padding: 40px 0;
+    @media screen and (max-width:1170px) {
+      max-width: calc(100% - 80px);
+    }
+    @media screen and (max-width:600px) {
+      max-width: calc(100% - 40px);
+    }
   }
 
   &__header {
@@ -21,6 +33,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    
   }
   // &__logo {}
 
@@ -29,6 +43,9 @@
 
 .header {
   margin-bottom: 150px;
+  @media screen and (max-width:1170px) {
+    margin-bottom: 40px;
+  }
 
   &__link {
     font: $font-text;
@@ -37,72 +54,37 @@
   }
 }
 
-
-
-// .form {
-//   width: 543px;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 24px;
-
-//   &__heading {
-//     @include headings(36px);
-//     margin-bottom: 12px;
-//   }
-
-//   &__item {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 16px;
-//     align-items: flex-start;
-//   }
-
-//   &__label {
-//     @extend .header__link;
-//   }
-
-//   &__input {
-//     width: 100%;
-//     height: 63px;
-//     border-radius: 5px;
-//     background-color: $bg-input;
-//     padding: 18px 24px;
-//     @extend %text;
-//     color: #ACACAC;
-//     opacity: 0.5;
-//   }
-
-//   &__btn {
-//     width: 534px;
-//   }
-
-//   &__text {
-//    @extend %text; 
-//    margin-top: -8px;
-
-//     a {
-//       @extend %link-blue;
-//     }
-//   }
-// }
-
 .quote {
+  max-width: 100%;
   background-color: $bg-color;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  @media screen and (max-width:1170px) {
+    padding: 0 40px;
+  }
+  @media screen and (max-width:600px) {
+    padding: 0 20px;
+  }
+  
   &__inner {
-    width: 306px;
-    height: 300px;
+    min-width: 306px;
+    max-width: 306px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 26px;
+    margin: 300px auto;
+
+    @media screen and (max-width:1170px) {
+      max-width: 814px;
+      margin: 50px 0;
+    }
   }
 
   &__text {
     @include headings (24px);
     line-height: 162%;
+    letter-spacing: 0.2px;
   }
 
   &__person {
