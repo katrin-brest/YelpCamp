@@ -2,3 +2,5 @@
 *.css 
 #ignore all map-files
 *.map
+#ignore images in root
+/*.jpg
