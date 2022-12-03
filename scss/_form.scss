@@ -2,7 +2,7 @@
 
 .form {
   min-width: 534px;
-  max-width: 100%;
+  // max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -24,7 +24,6 @@
   }
 
   &__label {
-    // @extend .header__link !optional;
     font: $font-text;
     line-height: (20px / 18px) * 100%;
     color: $text-color;
@@ -43,7 +42,9 @@
 
   &__textarea {
     @extend .form__input;
-    height: 219px;
+    min-height: 219px;
+    overflow: auto;
+    
   }
 
   &__btn {

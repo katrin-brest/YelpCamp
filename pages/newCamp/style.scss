@@ -8,5 +8,22 @@
 @import '../../scss/footer';
 
 .new-camp__form {
+  max-width: 534px;
   margin: 48px auto 0;
+  @media screen and (max-width: 900px) {
+    margin: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    margin: 40px 20px 0 20px;
+  }
 }
+
+.new-camp__header {
+  @media screen and (max-width:1170px) {
+    width: calc(100% - 80px);
+  }
+  @media screen and (max-width:767px) {
+    width: calc(100% - 40px);
+  }
+}
+
