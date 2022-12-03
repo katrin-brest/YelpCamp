@@ -4,7 +4,7 @@
 // import common styles
 @import '../../scss/common';
 
-.wrapper {
+.wrapper-land {
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
@@ -29,7 +29,7 @@
       }
 }
 
-.header {
+.header-land {
   grid-area: header;
   width: 520px;
   height: 107px;
