@@ -4,3 +4,5 @@
 *.map
 #ignore images in root
 /*.jpg
+#ignore json-files
+*json
