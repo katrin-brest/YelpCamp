@@ -1,7 +1,3 @@
-// @import '../../scss/common';
-// @import '../../scss/reset';
-
-// @import '../../scss/copyright';
 .search-wrapper {
   max-width: 1140px;
   margin: 0 auto;
@@ -11,12 +7,6 @@
     margin-bottom: 80px;
   }
 }
-
-// @import '../../scss/header';
-
-// @import '../../scss/button';
-
-// @import '../../scss/logo';
 
 .search-form {
   width: 100%;
@@ -57,7 +47,9 @@
 
     @media screen and (max-width:600px) {
       flex-direction: column;
-      
+    }
+    @media screen and (max-width:400px) {
+      width: 100%;
     }
    }
 
@@ -73,7 +65,9 @@
     @media screen and (max-width:600px) {
       width: 300px;
     }
-
+    @media screen and (max-width:400px) {
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -81,6 +75,10 @@
 
     @media screen and (max-width:600px) {
       width: 300px;
+    }
+
+    @media screen and (max-width:400px) {
+      width: 100%;
     }
   }
 
@@ -116,10 +114,16 @@
     margin: 40px auto;
   }
   @media screen and (max-width:767px) {
-    width: 374px;
+    max-width: 374px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 383px);
   }
+  @media screen and (max-width:400px) {  
+    width: calc(100% - 10px);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+
 
 .card {
   display: flex;
@@ -127,10 +131,12 @@
   padding: 15px;
   border: 1px solid #DADADA;  
   border-radius: 5px;
+
  
   &__image {
     margin-bottom: 17px;
     height: 183px;
+    width: 100%;
     object-fit: cover
   }
 

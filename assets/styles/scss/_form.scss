@@ -2,13 +2,13 @@
 
 .form {
   min-width: 534px;
-  // max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
   @media screen and (max-width:600px) {
     min-width:300px; 
   }
+  
 
   &__heading {
     @include headings(36px);
