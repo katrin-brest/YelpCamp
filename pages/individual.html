@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YelpCamp - Individual Page</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
@@ -20,12 +20,12 @@
   
     <header class="header">
       <div class="header__inner-left">
-        <div class="header__logo logo">YelpCamp</div>
-        <a href="../landing/index.html" class="header__home">Home</a>
+        <div class="header__logo logo"><a href="../index.html">YelpCamp</a></div>
+        <a href="../index.html" class="header__home">Home</a>
       </div>
       <div class="header__inner-right">
-        <a href="" class="header__login">Login</a>
-       <button class="header__btn button">Create an account</button>
+        <a href="../pages/signIn.html" class="header__login">Login</a>
+       <button class="header__btn button"><a href="../pages/signUp.html"> Create an account</a></button>
        </div>
        <div class="burger">
         <span class="burger__line"></span>
@@ -70,11 +70,12 @@
           <p class="review-item__text">Definitely recommend going there, not too far and not a lot of people to ruin the experience.</p>
         </div>
         
-        <button class="review__btn button">Leave a Review</button>
+        <button class="button review__btn"><a href="../pages/comment.html">
+          <img src="../assets/icons/ChatBubble.png" alt="chatbubble"> Leave a Review</a></button>
       </div>
     </main>
     <footer class="footer">
-      <div class="footer__logo logo">YelpCamp</div>
+      <div class="footer__logo logo"><a href="../index.html">YelpCamp</a></div>
     </footer>
 
   
