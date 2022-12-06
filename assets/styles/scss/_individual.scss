@@ -142,6 +142,7 @@ $paddings: 56px;
 		&__text {
       @extend %text;
       text-align: justify;
+      word-wrap: break-word;
     }
 
     &::after {

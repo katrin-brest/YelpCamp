@@ -29,3 +29,7 @@ function getComment () {
 }
 }
 
+import {textarea, autoHeight } from "./textarea.js";
+textarea.addEventListener('input', autoHeight)
+
+
