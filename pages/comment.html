@@ -33,17 +33,19 @@
       <span class="burger__line"></span>
       </div>
   </header>
- <form class="comment__form form" action="">
+ <form class="comment__form form" name="commentForm" action="">
+  
     <h2 class="form__heading">Add New Comment</h2>
     <div class="form__item">
       <label for="description" class="form__label">Description</label>
-      <textarea class="form__textarea" id="description" placeholder="This was probably the best camp i’ve visited this past year, definitely recommend visiting any time soon."></textarea>
+      <textarea class="form__textarea" id="description" name="comment" placeholder="This was probably the best camp i’ve visited this past year, definitely recommend visiting any time soon."></textarea>
     </div>
-    <button class="form__btn button">Post Comment</button>
+    <button class="form__btn button"><a href="../pages/individual.html#review">Post Comment</a></button>
   </form>
   
   <footer class="footer">
     <div class="footer__logo logo"><a href="../index.html">YelpCamp</a></div>
   </footer>
+  <script src="../assets/scripts/getcomment.js"></script>
 </body>
 </html>

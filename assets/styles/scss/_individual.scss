@@ -7,6 +7,7 @@ $paddings: 56px;
   "map camp"
   " .  review";
   grid-template-columns: 402px 701px;
+  // grid-template-rows: 1fr 1fr;
   gap: 42px 37px;
 
   @media screen and (max-width:1170px) {
@@ -92,6 +93,8 @@ $paddings: 56px;
 }
 .review {
   grid-area: review;
+  max-height: 700px ;
+  overflow-y: auto;
   @extend %border;
   padding: $paddings;
   display: flex;
@@ -108,6 +111,7 @@ $paddings: 56px;
 
 		&__btn {
       width: 216px;
+      min-height: 63px;
        a {
         justify-content: center;
         gap: 10px;
@@ -115,8 +119,9 @@ $paddings: 56px;
     }
 }
 .review-item {
-  max-width: 589px;
-    
+  // max-width: 589px;
+  width: 100%;
+      
     &__inner {
     display: flex;
     flex-direction: row;
