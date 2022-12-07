@@ -1,3 +1,4 @@
+// search a camp
 let camps = Array.from(document.querySelectorAll('.card__heading')).map(el => el.textContent)
 let cards = Array.from(document.querySelectorAll('.card'))
 console.log(cards)
@@ -39,3 +40,9 @@ function searchCamp () {
     gallery.classList.add('hidden')
   }
 }
+
+// click and view
+
+cards.forEach(el => {
+  el.addEventListener('click', () => location.href = '../../pages/individual.html')
+})
