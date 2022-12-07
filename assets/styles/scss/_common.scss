@@ -32,6 +32,10 @@ $bg-input:#F7F7F7;
   border-bottom: 1px solid #75D6FF;
   font-weight: 700;
 }
+%hovered-text {
+  color: black;
+  font-weight: 700;
+}
 
 // / add mixins
 @mixin bg($url, $posG, $posV) {

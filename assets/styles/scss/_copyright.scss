@@ -25,6 +25,11 @@
   &__link {
     color: #75D6FF;
     border-bottom: 1px solid #75D6FF;
+    &:hover {
+      color: white;
+      border-color: white;
+      transition: 0.3s;
+    }
   }
 }
 

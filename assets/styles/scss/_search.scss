@@ -84,11 +84,16 @@
 
   &__link {
     display: block;
-    width: 237px;
+    width: 252px;
+    text-align: center;
     @extend %text;
     line-height: 120%;
     margin-top: 2px;
-    
+
+    &:hover {
+      @extend %hovered-text;
+    }
+        
     &:after {
       display: block;
       content: '';
@@ -131,14 +136,20 @@
   padding: 15px;
   border: 1px solid #DADADA;  
   border-radius: 5px;
+  cursor: pointer;
 
- 
+  &:hover {
+    transform: scale(1.07);
+   border: 1px solid black;
+  }
+  
+  
   &__image {
     margin-bottom: 17px;
     height: 183px;
     width: 100%;
-    object-fit: cover
-  }
+    object-fit: cover;
+   }
 
   &__heading {
     @include headings(18px);
@@ -157,6 +168,13 @@
     border: 1px solid #DADADA;
     border-radius: 5px;
     font: $font-bold;
+
+    &:hover {
+      transform: scale(1.07);
+      background-color: black;
+      color: white;
+    }
+
 
     a {
       display: flex;

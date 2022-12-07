@@ -45,6 +45,10 @@
     font: $font-text;
     line-height: (20px / 18px) * 100%;
     color: $text-color;
+
+    &:hover {
+      @extend %hovered-text
+    }
   }
   
 }

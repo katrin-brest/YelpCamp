@@ -56,6 +56,10 @@
 
     a {
       @extend %link-blue;
+      &:hover {
+        @extend %hovered-text;
+        border-color: black;
+      }
     }
   }
 }
