@@ -47,10 +47,10 @@
       <h2 class="search-form__heading">Welcome to YelpCamp!</h2>
       <div class="search-form__text text">View our hand-picked campgrounds from all over the world, or add your own.</div>
       
-      <div class="search-form__inner">
-        <input type="text" class="search-form__input" placeholder="Search for camps">
-        <button class="search-form__btn button">Search</button>
-      </div>
+      <form class="search-form__inner" name="search">
+        <input type="text" class="search-form__input" name="search-text" placeholder="Search for camps">
+        <button type="button" class="search-form__btn button">Search</button>
+      </form>
       <a href="../pages/newcamp.html" class="search-form__link">Or add your own campground</a>
     </div>
     <main class="gallery">
@@ -94,5 +94,6 @@
     <div class="search__logo logo"><a href="../index.html"> YelpCamp</a></div>
   </div>
   <script src="../assets/scripts/burger.js"></script>
+  <script src="../assets/scripts/search.js"></script>
   </body>
 </html>
