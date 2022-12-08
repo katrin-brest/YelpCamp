@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Comment</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="copyright">
+    <div class="copyright__inner">
+     <p class="copyright__text">This project was made by <a href="https://www.youtube.com/c/ColtSteeleCode" target="_blank" rel="noopener noreferrer" class="copyright__link">Colt Steele</a> and designed by <a href="https://www.codewell.cc" target="_blank" rel="noopener noreferrer" class="copyright__link">Codewell</a></p>
+    <button class="close-btn"></button>
+    </div>
+  </div>
+ 
+  <header class="header">
+    <div class="header__inner-left">
+      <div class="header__logo logo"><a href="../index.html">YelpCamp</a></div>
+      <a href="../index.html" class="header__home">Home</a>
+    </div>
+    <div class="header__inner-right">
+      <p class="header__user">johndoe</p>
+      <a href="../landing/index.html" class="header__logout">Logout</a>
+    </div>
+    <div class="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      </div>
+  </header>
+ <form class="comment__form form" name="commentForm" action="">
+  
+    <h2 class="form__heading">Add New Comment</h2>
+    <div class="form__item">
+      <label for="description" class="form__label">Description</label>
+      <textarea class="form__textarea" id="description" name="comment" placeholder="This was probably the best camp i’ve visited this past year, definitely recommend visiting any time soon."></textarea>
+    </div>
+    <button class="form__btn button"><a href="../pages/individual.html#review">Post Comment</a></button>
+  </form>
+  
+  <footer class="footer">
+    <div class="footer__logo logo"><a href="../index.html">YelpCamp</a></div>
+  </footer>
+  <script type="module" src="../assets/scripts/getcomment.js"></script>
+</body>
+</html>

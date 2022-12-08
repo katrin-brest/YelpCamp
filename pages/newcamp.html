@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Campground</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="copyright">
+    <div class="copyright__inner">
+      <p class="copyright__text">This project was made by <a href="https://www.youtube.com/c/ColtSteeleCode" target="_blank" rel="noopener noreferrer" class="copyright__link">Colt Steele</a> and designed by <a href="https://www.codewell.cc" target="_blank" rel="noopener noreferrer" class="copyright__link">Codewell</a></p>
+    <button class="close-btn"></button>
+    </div>
+  </div>
+ 
+  <header class="header new-camp__header">
+    <div class="header__inner-left">
+      <div class="header__logo logo"><a href="../index.html"> YelpCamp</a></div>
+      <a href="../index.html" class="header__home">Home</a>
+    </div>
+    <div class="header__inner-right">
+      <p class="header__user">johndoe</p>
+      <a href="../landing/index.html" class="header__logout">Logout</a>
+    </div>
+    <div class="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </div>
+    <div class="menu__bg"></div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <button class="menu__close-btn"><img src="../assets/icons/cross_circle_icon.png" alt="close" width="30"> </button>
+        <li class="menu__item"><a href="../index.html">Home</a></li>
+        <li class="menu__item"><a href="../pages/signIn.html">Login</a></li>
+        <li class="menu__item"><a href="../pages/signUp.html">Create an account</a></li>
+      </ul>
+    </nav>
+  </header>
+ <form class="form new-camp__form" action="">
+    <h2 class="form__heading">Add New Campground</h2>
+    <div class="form__item">
+      <label for="name" class="form__label">Campground Name</label>
+      <input class="form__input" type="text" id="name" placeholder="Seven Sisters Waterfall">
+    </div>
+    <div class="form__item">
+      <label for="price" class="form__label">Price</label>
+      <input class="form__input" type="text" id="price" placeholder="$149">
+    </div>
+    <div class="form__item">
+      <label for="image" class="form__label">Image</label>
+      <input class="form__input" type="text" id="image" placeholder="www.thepinoytraveler.com/2018/01/mt-ulap-diy-dayhike.html">
+    </div>
+    <div class="form__item">
+      <label for="description" class="form__label">Description</label>
+      <textarea class="form__textarea" id="description" placeholder="The Seven Sisters is the 39th tallest waterfall in Norway. The 410-metre tall waterfall consists of seven separate streams, and the tallest of the seven has a free fall that measures 250 metres. The waterfall is located along the Geirangerfjorden in Stranda Municipality in Møre og Romsdal county, Norway."></textarea>
+    </div>
+    <button class="form__btn button">Add Campground</button>
+  </form>
+  
+  <footer class="footer">
+    <div class="footer__logo logo"><a href="../index.html">YelpCamp</a></div>
+  </footer>
+  <script src="../assets/scripts/burger.js"></script>
+  <script type="module" src="../assets/scripts/textarea.js"></script>
+</body>
+</html>

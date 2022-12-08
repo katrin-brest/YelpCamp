@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YelpCamp - Search page</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="copyright">
+    <div class="copyright__inner">
+      <p class="copyright__text">This project was made by <a href="https://www.youtube.com/c/ColtSteeleCode" target="_blank" rel="noopener noreferrer" class="copyright__link">Colt Steele</a> and designed by <a href="https://www.codewell.cc" target="_blank" rel="noopener noreferrer" class="copyright__link">Codewell</a></p>
+    <button class="close-btn"></button>
+    </div>
+  </div>
+  
+  <div class="search-wrapper">
+    <header class="header">
+      <div class="header__inner-left">
+        <div class="header__logo logo"><a href="../index.html">YelpCamp</a></div>
+        <a href="../index.html" class="header__home">Home</a>
+      </div>
+      <div class="header__inner-right">
+        <a href="../pages/signIn.html" class="header__login">Login</a>
+       <button class="header__btn button"><a href="../pages/signUp.html">Create an account</a></button>
+      </div>
+      <div class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+     </header>
+    <div class="menu__bg"></div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <button class="menu__close-btn"><img src="../assets/icons/cross_circle_icon.png" alt="close" width="30"> </button>
+        <li class="menu__item"><a href="../index.html">Home</a></li>
+        <li class="menu__item"><a href="../pages/signIn.html">Login</a></li>
+        <li class="menu__item"><a href="../pages/signUp.html">Create an account</a></li>
+      </ul>
+    </nav>
+    <div class="search-form">
+      <h2 class="search-form__heading">Welcome to YelpCamp!</h2>
+      <div class="search-form__text text">View our hand-picked campgrounds from all over the world, or add your own.</div>
+      
+      <form class="search-form__inner" name="search">
+        <input type="text" class="search-form__input" name="search-text" placeholder="Search for camps">
+        <button type="button" class="search-form__btn button">Search</button>
+      </form>
+      <a href="../pages/newcamp.html" class="search-form__link">Or add your own campground</a>
+    </div>
+    <main class="gallery">
+      <div class="card">
+        <img src="../../assets/images/MountUlap.jpg" alt="view" class="card__image">
+        <h3 class="card__heading">Mount Ulap</h3>
+        <p class="card__text">One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
+        <button class="card__button"> <a href="../pages/individual.html">View Campground</a> </button>
+      </div>
+      <div class="card">
+        <img src="../../assets/images/CalaguasIsland.jpg" alt="view" class="card__image">
+        <h3 class="card__heading">Calaguas Islands</h3>
+        <p class="card__text">A paradise of islands that can rival the white sand beauty of Boracay.</p>
+        <button class="card__button"><a href="../pages/individual.html">View Campground</a></button>
+      </div>
+      <div class="card">
+        <img src="../../assets/images/OnayBeach.jpg" alt="view" class="card__image">
+        <h3 class="card__heading">Onay Beach</h3>
+        <p class="card__text">This is one of the best beach camping sites, beautiful and pristine.</p>
+        <button class="card__button"><a href="../pages/individual.html">View Campground</a></button>
+      </div>
+      <div class="card">
+        <img src="../../assets/images/SevenSistersWaterfall.jpg" alt="view" class="card__image">
+        <h3 class="card__heading">Seven Sisters Waterfall</h3>
+        <p class="card__text">The Seven Sisters is the 39th tallest waterfall in Norway.</p>
+        <button class="card__button"><a href="../pages/individual.html">View Campground</a></button>
+      </div>
+      <div class="card">
+        <img src="../../assets/images/LatikRiverside.jpg" alt="view" class="card__image">
+        <h3 class="card__heading">Latik Riverside</h3>
+        <p class="card__text">Philippines is one of the most dazzling countries in all of Asia.</p>
+        <button class="card__button"><a href="../pages/individual.html">View Campground</a></button>
+      </div>
+      <div class="card">
+        <img src="../../assets/images/BuloySprings.jpg" alt="view" class="card__image">
+        <h3 class="card__heading">Buloy Springs</h3>
+        <p class="card__text">This is one of the best beach camping sites, beautiful and pristine.</p>
+        <button class="card__button"><a href="../pages/individual.html">View Campground</a></button>
+      </div>
+    </main>
+    <div class="search__logo logo"><a href="../index.html"> YelpCamp</a></div>
+  </div>
+  <script src="../assets/scripts/burger.js"></script>
+  <script src="../assets/scripts/search.js"></script>
+  </body>
+</html>
